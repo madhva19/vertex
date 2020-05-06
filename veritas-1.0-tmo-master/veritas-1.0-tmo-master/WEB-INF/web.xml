@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+   version="2.5">
+
+  <display-name>Welcome to Tomcat</display-name>
+  <description>
+     Welcome to Tomcat
+  </description>
+ <servlet>
+  <servlet-name>LandingPage</servlet-name>
+  <servlet-class>LandingPage</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>LandingPage</servlet-name>
+ <url-pattern>/LandingPage</url-pattern>
+ </servlet-mapping>
+
+  <servlet>
+  <servlet-name>adduser</servlet-name>
+  <servlet-class>AddUser</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>adduser</servlet-name>
+ <url-pattern>/addUser</url-pattern>
+ </servlet-mapping>
+
+
+ <servlet>
+  <servlet-name>editservlet</servlet-name>
+  <servlet-class>UserServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>editservlet</servlet-name>
+ <url-pattern>/editServlet/*</url-pattern>
+ </servlet-mapping>
+
+
+ <servlet>
+  <servlet-name>edituser</servlet-name>
+  <servlet-class>EditUser</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>edituser</servlet-name>
+ <url-pattern>/editUser</url-pattern>
+ </servlet-mapping>
+
+  <servlet>
+  <servlet-name>deleteuser</servlet-name>
+  <servlet-class>DeleteUser</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>deleteuser</servlet-name>
+ <url-pattern>/deleteUser/*</url-pattern>
+ </servlet-mapping>
+
+
+<servlet>
+  <servlet-name>viewnoteservlet</servlet-name>
+  <servlet-class>viewNoteServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>viewnoteservlet</servlet-name>
+ <url-pattern>/viewNoteServlet/*</url-pattern>
+ </servlet-mapping>
+ 
+<servlet>
+  <servlet-name>ViewAllProject</servlet-name>
+  <servlet-class>ViewAllProject</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>ViewAllProject</servlet-name>
+ <url-pattern>/ViewAllProject/*</url-pattern>
+ </servlet-mapping>
+
+<servlet>
+  <servlet-name>AddComponent</servlet-name>
+  <servlet-class>AddComponent</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>AddComponent</servlet-name>
+ <url-pattern>/AddComponent/*</url-pattern>
+ </servlet-mapping>
+
+<servlet>
+  <servlet-name>ViewAllComponent</servlet-name>
+  <servlet-class>ViewAllComponent</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>ViewAllComponent</servlet-name>
+ <url-pattern>/ViewAllComponent/*</url-pattern>
+ </servlet-mapping>
+<servlet>
+  <servlet-name>addComponentforProject</servlet-name>
+  <servlet-class>addComponentforProject</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>addComponentforProject</servlet-name>
+ <url-pattern>/addComponentforProject/*</url-pattern>
+ </servlet-mapping>
+<servlet>
+  <servlet-name>AddImpact</servlet-name>
+  <servlet-class>AddImpact</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>AddImpact</servlet-name>
+ <url-pattern>/AddImpact/*</url-pattern>
+ </servlet-mapping>
+<servlet>
+  <servlet-name>viewCompImpact</servlet-name>
+  <servlet-class>viewCompImpact</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>viewCompImpact</servlet-name>
+ <url-pattern>/viewCompImpact/*</url-pattern>
+ </servlet-mapping>
+<servlet>
+  <servlet-name>AddResource</servlet-name>
+  <servlet-class>AddResource</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>AddResource</servlet-name>
+ <url-pattern>/AddResource/*</url-pattern>
+ </servlet-mapping>
+<servlet>
+  <servlet-name>AddFeature</servlet-name>
+  <servlet-class>AddFeature</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>AddFeature</servlet-name>
+ <url-pattern>/AddFeature/*</url-pattern>
+ </servlet-mapping>
+ <servlet>
+  <servlet-name>ViewAllProjectDependency</servlet-name>
+  <servlet-class>ViewAllProjectDependency</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>ViewAllProjectDependency</servlet-name>
+ <url-pattern>/ViewAllProjectDependency/*</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+  <servlet-name>addFeatureforProject</servlet-name>
+  <servlet-class>addFeatureforProject</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>addFeatureforProject</servlet-name>
+ <url-pattern>/addFeatureforProject/*</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ 
+ 
+ 
+ <servlet>
+  <servlet-name>addHLSD</servlet-name>
+  <servlet-class>addHLSD</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>addHLSD</servlet-name>
+ <url-pattern>/addHLSD/*</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet>
+  <servlet-name>ViewAllHLSD</servlet-name>
+  <servlet-class>ViewAllHLSD</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>ViewAllHLSD</servlet-name>
+ <url-pattern>/ViewAllHLSD/*</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+  <servlet-name>viewAllFeedback</servlet-name>
+  <servlet-class>viewAllFeedback</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>viewAllFeedback</servlet-name>
+ <url-pattern>/viewAllFeedback/*</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ 
+   <servlet>
+  <servlet-name>ViewAllFeature</servlet-name>
+  <servlet-class>ViewAllFeature</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>ViewAllFeature</servlet-name>
+ <url-pattern>/ViewAllFeature/*</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ 
+   <servlet>
+  <servlet-name>ViewAllUnusedFeature</servlet-name>
+  <servlet-class>ViewAllUnusedFeature</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>ViewAllUnusedFeature</servlet-name>
+ <url-pattern>/ViewAllUnusedFeature/*</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ 
+  <servlet>
+  <servlet-name>addDependencyforProject</servlet-name>
+  <servlet-class>addDependencyforProject</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>addDependencyforProject</servlet-name>
+ <url-pattern>/addDependencyforProject/*</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet>
+  <servlet-name>ReportData</servlet-name>
+  <servlet-class>ReportData</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>ReportData</servlet-name>
+ <url-pattern>/ReportData/*</url-pattern>
+ </servlet-mapping>
+ 
+ 
+  <servlet>
+  <servlet-name>AddDependency</servlet-name>
+  <servlet-class>AddDependency</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>AddDependency</servlet-name>
+ <url-pattern>/AddDependency/*</url-pattern>
+ </servlet-mapping>
+ 
+   <servlet>
+  <servlet-name>ExportAlltheData</servlet-name>
+  <servlet-class>ExportAlltheData</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>ExportAlltheData</servlet-name>
+ <url-pattern>/ExportAlltheData/*</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+  <servlet-name>techDebt</servlet-name>
+  <servlet-class>techDebt</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>techDebt</servlet-name>
+ <url-pattern>/techDebt/*</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ 
+ 
+  <servlet>
+  <servlet-name>ViewAllTechDebt</servlet-name>
+  <servlet-class>ViewAllTechDebt</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>ViewAllTechDebt</servlet-name>
+ <url-pattern>/ViewAllTechDebt/*</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ 
+ 
+  <servlet>
+  <servlet-name>addTD</servlet-name>
+  <servlet-class>addTD</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>addTD</servlet-name>
+ <url-pattern>/addTD/*</url-pattern>
+ </servlet-mapping>
+ 
+   <servlet>
+        <servlet-name>home</servlet-name>
+        <jsp-file>/intro.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>home</servlet-name>
+        <url-pattern>/home/*</url-pattern>
+    </servlet-mapping>
+    
+    
+	 <servlet>
+        <servlet-name>allProj</servlet-name>
+        <jsp-file>/home.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>allProj</servlet-name>
+        <url-pattern>/allProj/*</url-pattern>
+    </servlet-mapping>
+	 
+	 <servlet>
+        <servlet-name>ViewMetricsDashboard</servlet-name>
+        <servlet-class>ViewMetricsDashboard</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ViewMetricsDashboard</servlet-name>
+        <url-pattern>/ViewMetricsDashboard/*</url-pattern>
+    </servlet-mapping>
+	
+		 <servlet>
+        <servlet-name>MetricsDashboard</servlet-name>
+        <jsp-file>/MetricsDashboard.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MetricsDashboard</servlet-name>
+        <url-pattern>/MetricsDashboard/*</url-pattern>
+    </servlet-mapping>
+	
+	
+	
+	
+	<servlet>
+        <servlet-name>projectDetails</servlet-name>
+        <jsp-file>/project.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>projectDetails</servlet-name>
+        <url-pattern>/projectDetails/*</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>editFeatureforProject</servlet-name>
+        <jsp-file>/editFeatureforProject.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>editFeatureforProject</servlet-name>
+        <url-pattern>/editFeatureforProject/*</url-pattern>
+    </servlet-mapping>
+	
+	
+	<servlet>
+        <servlet-name>addTDforProject</servlet-name>
+        <jsp-file>/addTDforProject.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addTDforProject</servlet-name>
+        <url-pattern>/addTDforProject/*</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>addHLSDforProject</servlet-name>
+        <jsp-file>/addHLSDforProject.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addHLSDforProject</servlet-name>
+        <url-pattern>/addHLSDforProject/*</url-pattern>
+    </servlet-mapping>
+	
+	
+	<servlet>
+        <servlet-name>addResourceforProject</servlet-name>
+        <jsp-file>/addResourceforProject.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addResourceforProject</servlet-name>
+        <url-pattern>/addResourceforProject/*</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>editResourceforProject</servlet-name>
+        <jsp-file>/editResourceforProject.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>editResourceforProject</servlet-name>
+        <url-pattern>/editResourceforProject/*</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>editHLSDforProject</servlet-name>
+        <jsp-file>/editHLSDforProject.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>editHLSDforProject</servlet-name>
+        <url-pattern>/editHLSDforProject/*</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>editComponentforProject</servlet-name>
+        <jsp-file>/editComponentforProject.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>editComponentforProject</servlet-name>
+        <url-pattern>/editComponentforProject/*</url-pattern>
+    </servlet-mapping>
+	
+	
+	<servlet>
+        <servlet-name>editProject</servlet-name>
+        <jsp-file>/editProject.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>editProject</servlet-name>
+        <url-pattern>/editProject/*</url-pattern>
+    </servlet-mapping>
+	
+	
+	<servlet>
+        <servlet-name>addComponentforProjectUI</servlet-name>
+        <jsp-file>/addComponentforProject.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addComponentforProjectUI</servlet-name>
+        <url-pattern>/addComponentforProjectUI/*</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>addDependencyforProjectUI</servlet-name>
+        <jsp-file>/addDependencyforProject.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addDependencyforProjectUI</servlet-name>
+        <url-pattern>/addDependencyforProjectUI/*</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>addFeatureforProjectUI</servlet-name>
+        <jsp-file>/addFeatureforProject.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addFeatureforProjectUI</servlet-name>
+        <url-pattern>/addFeatureforProjectUI/*</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>viewComp</servlet-name>
+        <jsp-file>/viewComp.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>viewComp</servlet-name>
+        <url-pattern>/viewComp/*</url-pattern>
+    </servlet-mapping>
+
+ <servlet>
+        <servlet-name>allFeature</servlet-name>
+        <jsp-file>/allFeature.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>allFeature</servlet-name>
+        <url-pattern>/allFeature/*</url-pattern>
+    </servlet-mapping>
+ 
+  <servlet>
+        <servlet-name>allHLSD</servlet-name>
+        <jsp-file>/allHLSD.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>allHLSD</servlet-name>
+        <url-pattern>/allHLSD/*</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>allfeedbackUI</servlet-name>
+        <jsp-file>/allfeedbackUI.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>allfeedbackUI</servlet-name>
+        <url-pattern>/allfeedbackUI/*</url-pattern>
+    </servlet-mapping>
+    
+    
+ 
+ <servlet>
+        <servlet-name>ProjectDependency</servlet-name>
+        <jsp-file>/ProjectDependency.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ProjectDependency</servlet-name>
+        <url-pattern>/ProjectDependency/*</url-pattern>
+    </servlet-mapping>
+  <servlet>
+        <servlet-name>allUnusedFeature</servlet-name>
+        <jsp-file>/allUnusedFeature.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>allUnusedFeature</servlet-name>
+        <url-pattern>/allUnusedFeature/*</url-pattern>
+    </servlet-mapping>
+   <servlet>
+        <servlet-name>viewCompDetails</servlet-name>
+        <jsp-file>/viewCompDetails.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>viewCompDetails</servlet-name>
+        <url-pattern>/viewCompDetails/*</url-pattern>
+    </servlet-mapping>
+ 
+ 
+  <servlet>
+        <servlet-name>addProject</servlet-name>
+        <jsp-file>/addProject.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addProject</servlet-name>
+        <url-pattern>/addProject/*</url-pattern>
+    </servlet-mapping>
+ 
+ 
+ 
+ <servlet>
+        <servlet-name>addFeature</servlet-name>
+        <jsp-file>/addFeature.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addFeature</servlet-name>
+        <url-pattern>/addFeature/*</url-pattern>
+    </servlet-mapping>
+ 
+ 
+ 
+  <servlet>
+        <servlet-name>addComponent</servlet-name>
+        <jsp-file>/addComponent.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addComponent</servlet-name>
+        <url-pattern>/addComponent/*</url-pattern>
+    </servlet-mapping>
+ 
+ 
+   <servlet>
+        <servlet-name>addResource</servlet-name>
+        <jsp-file>/addResource.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addResource</servlet-name>
+        <url-pattern>/addResource/*</url-pattern>
+    </servlet-mapping>
+	
+	 <servlet>
+        <servlet-name>report</servlet-name>
+        <jsp-file>/techDt.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>report</servlet-name>
+        <url-pattern>/report/*</url-pattern>
+    </servlet-mapping>
+	
+	
+	 <servlet>
+        <servlet-name>AllTechDebtUI</servlet-name>
+        <jsp-file>/viewalltechDt.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AllTechDebtUI</servlet-name>
+        <url-pattern>/AllTechDebtUI/*</url-pattern>
+    </servlet-mapping>
+	
+	 <servlet>
+        <servlet-name>heatmap</servlet-name>
+        <jsp-file>/heatmap.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>heatmap</servlet-name>
+        <url-pattern>/heatmap/*</url-pattern>
+    </servlet-mapping>
+	
+	
+	 <servlet>
+        <servlet-name>ReportExport</servlet-name>
+        <jsp-file>/ReportExport.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ReportExport</servlet-name>
+        <url-pattern>/ReportExport/*</url-pattern>
+    </servlet-mapping>
+	
+	 <servlet>
+        <servlet-name>ProjectDGraphUI</servlet-name>
+        <jsp-file>/ProjectDependencyGraph.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ProjectDGraphUI</servlet-name>
+        <url-pattern>/ProjectDGraphUI/*</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+  <servlet-name>ProjectDGraph</servlet-name>
+  <servlet-class>ProjectDGraph</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>ProjectDGraph</servlet-name>
+ <url-pattern>/ProjectDGraph/*</url-pattern>
+ </servlet-mapping>
+
+
+<servlet>
+        <servlet-name>allReviewUI</servlet-name>
+        <jsp-file>/allReview.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>allReviewUI</servlet-name>
+        <url-pattern>/allReviewUI/*</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+  <servlet-name>ViewAllReviewStatus</servlet-name>
+  <servlet-class>ViewAllReviewStatus</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>ViewAllReviewStatus</servlet-name>
+ <url-pattern>/ViewAllReviewStatus/*</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+        <servlet-name>pdrUI</servlet-name>
+        <jsp-file>/addRiskForProject.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>pdrUI</servlet-name>
+        <url-pattern>/pdrUI/*</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+  <servlet-name>addPDR</servlet-name>
+  <servlet-class>addPDR</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>addPDR</servlet-name>
+ <url-pattern>/addPDR/*</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+        <servlet-name>AllpdrUI</servlet-name>
+        <jsp-file>/viewallpdr.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AllpdrUI</servlet-name>
+        <url-pattern>/AllpdrUI/*</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+  <servlet-name>ViewPDR</servlet-name>
+  <servlet-class>ViewPDR</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>ViewPDR</servlet-name>
+ <url-pattern>/ViewPDR/*</url-pattern>
+ </servlet-mapping>
+
+
+  <servlet>
+        <servlet-name>addCRForProject</servlet-name>
+        <jsp-file>/addCRForProject.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addCRForProject</servlet-name>
+        <url-pattern>/addCRForProject/*</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+  <servlet-name>addCR</servlet-name>
+  <servlet-class>addCR</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>addCR</servlet-name>
+ <url-pattern>/addCR/*</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+        <servlet-name>addIntegrationForProject</servlet-name>
+        <jsp-file>/addIntegrationForProject.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addIntegrationForProject</servlet-name>
+        <url-pattern>/addIntegrationForProject/*</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+  <servlet-name>addIntegration</servlet-name>
+  <servlet-class>addIntegration</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>addIntegration</servlet-name>
+ <url-pattern>/addIntegration/*</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+        <servlet-name>viewAllIT</servlet-name>
+        <jsp-file>/viewAllIT.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>viewAllIT</servlet-name>
+        <url-pattern>/viewAllIT/*</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+  <servlet-name>viewAllIntegration</servlet-name>
+  <servlet-class>viewAllIntegration</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>viewAllIntegration</servlet-name>
+ <url-pattern>/viewAllIntegration/*</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+        <servlet-name>viewAllCRUI</servlet-name>
+        <jsp-file>/viewAllCRUI.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>viewAllCRUI</servlet-name>
+        <url-pattern>/viewAllCRUI/*</url-pattern>
+    </servlet-mapping>
+ 
+ 
+ 
+ 	<servlet>
+  <servlet-name>viewAllCR</servlet-name>
+  <servlet-class>viewAllCR</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>viewAllCR</servlet-name>
+ <url-pattern>/viewAllCR/*</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+        <servlet-name>addProjectStatusUI</servlet-name>
+        <jsp-file>/addProjectStatus.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addProjectStatusUI</servlet-name>
+        <url-pattern>/addProjectStatusUI/*</url-pattern>
+    </servlet-mapping>
+ 
+ 
+ 
+ 	<servlet>
+  <servlet-name>AddProjectStatus</servlet-name>
+  <servlet-class>AddProjectStatus</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>AddProjectStatus</servlet-name>
+ <url-pattern>/AddProjectStatus/*</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ 
+ <servlet>
+        <servlet-name>ProjectFeatureStatusUI</servlet-name>
+        <jsp-file>/projectFeatureStatus.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ProjectFeatureStatusUI</servlet-name>
+        <url-pattern>/ProjectFeatureStatusUI/*</url-pattern>
+    </servlet-mapping>
+ 
+ <servlet>
+        <servlet-name>eacfeedbackUI</servlet-name>
+        <jsp-file>/assesmentforProject.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>eacfeedbackUI</servlet-name>
+        <url-pattern>/eacfeedbackUI/*</url-pattern>
+    </servlet-mapping>
+ 
+  	<servlet>
+  <servlet-name>AddEACFeedback</servlet-name>
+  <servlet-class>AddEACFeedback</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>AddEACFeedback</servlet-name>
+ <url-pattern>/AddEACFeedback/*</url-pattern>
+ </servlet-mapping>
+ 
+   	<servlet>
+  <servlet-name>queryEACfeedback</servlet-name>
+  <servlet-class>queryEACfeedback</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>queryEACfeedback</servlet-name>
+ <url-pattern>/queryEACfeedback/*</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ 
+ 	<servlet>
+  <servlet-name>ViewAllProjectFeatureStatus</servlet-name>
+  <servlet-class>ViewAllProjectFeatureStatus</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>ViewAllProjectFeatureStatus</servlet-name>
+ <url-pattern>/ViewAllProjectFeatureStatus/*</url-pattern>
+ </servlet-mapping>
+ 
+ <error-page>
+ <exception-type>java.lang.Throwable</exception-type> 
+<location>/error.html</location>
+</error-page>
+<error-page>
+
+<location>/error.html</location>
+</error-page>
+<error-page>
+<error-code>500</error-code>
+<location>/error.html</location>
+</error-page>
+
+ </web-app>
+
+
+

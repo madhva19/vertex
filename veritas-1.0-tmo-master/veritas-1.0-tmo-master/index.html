@@ -1,0 +1,309 @@
+
+
+
+<HTML>
+<HEAD>
+<TITLE>Veritas</TITLE>
+<META name="viewport"
+	content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<META http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<META name="HandheldFriendly" content="true">
+<LINK rel="icon" type="image/png" href="logo.png" />
+<LINK rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<SCRIPT
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+	type="text/javascript"></SCRIPT>
+<SCRIPT
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"
+	type="text/javascript"></SCRIPT>
+<STYLE type="text/css">
+html {
+	font-size: 100%;
+}
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+	#primary {
+		width: 67%;
+	}
+	#secondary {
+		width: 30%;
+		margin-left: 3%;
+	}
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+	#primary {
+		width: 100%;
+	}
+	#secondary {
+		width: 100%;
+		margin: 0;
+		border: none;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1024px) { //
+	only from ipads down
+  body {
+		padding-bottom: 60px;
+	}
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.input-container {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.icon {
+	padding: 10px;
+	background: #E20074;
+	color: white;
+	min-width: 50px;
+	text-align: center;
+}
+
+.input-field {
+	width: 100%;
+	padding: 10px;
+	outline: none;
+}
+
+.input-field:focus {
+	border: 2px solid #fce2ec;
+}
+
+/* Set a style for the submit button */
+.btn {
+	background-color: #E20074;
+	color: white;
+	padding: 15px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+}
+
+.btn:hover {
+	opacity: 1;
+}
+
+.text1 {
+	display: none;
+	color: red
+}
+</STYLE>
+
+
+<LINK rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</HEAD>
+
+<BODY link="#3300FF" vlink="#3300FF" alink="#3300FF">
+	<DIV class="alert alert-danger" id="dwar" style="display: none;">
+		<STRONG>WARNING!</STRONG> Chrome and Safari browsers are supported for
+		this version. IE and Edge support shall come with next release.
+
+	</DIV>
+	<DIV class="container">
+		<TABLE width="700" border="0" align="center"
+			oncontextmenu="return false;">
+			<TR border="0">
+				<TD>&nbsp;</TD>
+
+
+			</TR>
+			<TR border="0">
+				<TD></TD>
+
+
+			</TR>
+			<TR border="0">
+				<TD>&nbsp;</TD>
+
+
+			</TR>
+			<TR border="0">
+				<TD>&nbsp;</TD>
+
+
+			</TR>
+		</TABLE>
+
+		<TABLE width="700" border="2" align="center" bordercolor="fce2ec">
+			<TR>
+				<TD>
+					<TABLE width="700" border="0" align="center">
+						<TR border="0">
+							<TD>&nbsp;</TD>
+
+
+						</TR>
+
+						<TR>
+							<STRONG>
+								<TD><FONT color="red"><DIV id="message"></DIV></FONT></TD>
+							</STRONG>
+						</TR>
+
+						<TR>
+
+							<TD>&nbsp;</TD>
+
+						</TR>
+						<TR>
+
+							<TD align="center"><STRONG> <FONT color="E20074"
+									size="6.5">Veritas </FONT></STRONG></TD>
+
+						</TR>
+						<TR>
+
+							<TD>&nbsp;</TD>
+
+						</TR>
+						<TR>
+
+							<TD>&nbsp;</TD>
+
+						</TR>
+						<TR>
+							<TD>
+								<FORM name="form1" method="post" action="LandingPage">
+									<TABLE width="500" border="0" align="center">
+
+
+										<TR>
+
+											<TD>
+												<DIV class="input-container">
+													<I class="fa fa-user icon"></I> <INPUT name="userName"
+														type="text" placeholder="Username" class="input-field">
+												</DIV>
+											</TD>
+
+										</TR>
+
+										<TR>
+
+											<TD>
+												<DIV class="input-container">
+													<I class="fa fa-key icon"></I> <INPUT name="password"
+														id="password" type="password" placeholder="Password"
+														class="input-field">
+
+												</DIV>
+												<P id="text1" style="display: none">WARNING! Caps lock
+													is ON.</P> <INPUT type="checkbox" onclick="myFunction()">    Show
+												Password
+											</TD>
+
+										</TR>
+
+										<TR>
+
+											<TD align="center">
+												<BUTTON type="submit" class="btn">Submit</BUTTON>
+
+											</TD>
+
+										</TR>
+
+									</TABLE>
+								</FORM>
+							</TD>
+						</TR>
+						<TR border="0">
+							<TD>&nbsp;</TD>
+
+
+						</TR>
+
+						<TR>
+
+							<TD>&nbsp;</TD>
+
+						</TR>
+
+						<TR>
+
+							<TD>&nbsp;</TD>
+
+						</TR>
+
+					</TABLE>
+				</TD>
+
+
+			</TR>
+		</TABLE>
+	</DIV>
+
+	<SCRIPT type="text/javascript">
+		function myFunction() {
+			var x = document.getElementById("password");
+			if (x.type === "password") {
+				x.type = "text";
+			} else {
+				x.type = "password";
+			}
+		}
+
+		function getUrlVars() {
+			var vars = {};
+			var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
+					function(m, key, value) {
+						vars[key] = value;
+					});
+			return vars;
+		}
+
+		function getUrlParam(parameter, defaultvalue) {
+			var urlparameter = defaultvalue;
+			if (window.location.href.indexOf(parameter) > -1) {
+				urlparameter = getUrlVars()[parameter];
+			}
+			return urlparameter;
+		}
+
+		var mytext = getUrlParam('message', '');
+
+		mytext = decodeURI(mytext);
+		document.getElementById("message").innerHTML = mytext;
+	</SCRIPT>
+
+	<SCRIPT type="text/javascript">
+		var input = document.getElementById("password");
+		var text = document.getElementById("text1");
+		input.addEventListener("keyup", function(event) {
+
+			if (event.getModifierState("CapsLock")) {
+				text.style.display = "block";
+				text.style.color = "red";
+			} else {
+				text.style.display = "none"
+			}
+		});
+
+		if (document.documentMode || /Edge/.test(navigator.userAgent)) {
+
+			dwar.style.display = 'inline';
+		}
+	</SCRIPT>
+</BODY>
+</HTML>
